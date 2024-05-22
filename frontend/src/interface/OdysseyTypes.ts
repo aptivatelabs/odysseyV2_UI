@@ -23,3 +23,23 @@ export interface OdysseyResource {
     minted: string;
     paused: boolean;
 }
+
+export interface Stage {
+    key: string;
+    value: {
+      start_time: number;
+      end_time: number;
+    };
+}
+  
+export interface FeesData {
+    key: string;
+    value: {
+      amount: string; // Note: amount is still considered as string
+    }[];
+}
+  
+export interface Fees {
+    key: string;
+    amount: string; // Note: amount is still considered as string
+}
